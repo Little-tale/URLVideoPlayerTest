@@ -10,12 +10,16 @@ import AVKit
 
 struct PlayerView: View {
     
+    @State var currentURL: URL? = nil
+    
     var body: some View {
         ForEach(URLTest.allCases, id: \.self) { caseOf in
-//            VideoPlayer(player: AVPlayer(url: caseOf.url!)) {
-//                EmptyView()
-//            }
-            WebViewPlayer(url: caseOf.url!)
+            WebViewPlayer(url: caseOf.url!, clickedURL: $currentURL)
+                .onChange(of: currentURL) { newValue in
+                    if let newValue {
+                        print("클릭된 URL: \(newValue)")
+                    }
+                }
         }
     }
 }
