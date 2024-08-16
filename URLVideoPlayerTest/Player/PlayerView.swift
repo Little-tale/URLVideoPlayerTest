@@ -12,9 +12,10 @@ struct PlayerView: View {
     
     var body: some View {
         ForEach(URLTest.allCases, id: \.self) { caseOf in
-            VideoPlayer(player: AVPlayer(url: caseOf.url!)) {
-                EmptyView()
-            }
+//            VideoPlayer(player: AVPlayer(url: caseOf.url!)) {
+//                EmptyView()
+//            }
+            WebViewPlayer(url: caseOf.url!)
         }
     }
 }

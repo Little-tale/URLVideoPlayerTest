@@ -13,6 +13,7 @@
 		7B1582382C6F373100599E7C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7B1582372C6F373100599E7C /* .gitignore */; };
 		7B15823B2C6F376200599E7C /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B15823A2C6F376200599E7C /* Secret.swift */; };
 		7B1582422C6F3AFC00599E7C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1582412C6F3AFC00599E7C /* PlayerView.swift */; };
+		7B1582442C6F3EB900599E7C /* WebViewPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1582432C6F3EB900599E7C /* WebViewPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7B1582372C6F373100599E7C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7B15823A2C6F376200599E7C /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		7B1582412C6F3AFC00599E7C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		7B1582432C6F3EB900599E7C /* WebViewPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				7B1582412C6F3AFC00599E7C /* PlayerView.swift */,
+				7B1582432C6F3EB900599E7C /* WebViewPlayer.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1582442C6F3EB900599E7C /* WebViewPlayer.swift in Sources */,
 				7B15823B2C6F376200599E7C /* Secret.swift in Sources */,
 				7B15821F2C6F35FB00599E7C /* URLVideoPlayerTestApp.swift in Sources */,
 				7B1582422C6F3AFC00599E7C /* PlayerView.swift in Sources */,
