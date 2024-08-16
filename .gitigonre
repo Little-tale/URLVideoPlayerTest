@@ -5,7 +5,7 @@
 ## My_ignore
 .DS_Store
 
-secret/
+Secret/
 
 # Xcode workspace user state
 GuideU.xcodeproj/project.xcworkspace/xcuserdata/
