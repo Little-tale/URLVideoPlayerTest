@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		7B15821F2C6F35FB00599E7C /* URLVideoPlayerTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B15821E2C6F35FB00599E7C /* URLVideoPlayerTestApp.swift */; };
-		7B1582212C6F35FB00599E7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1582202C6F35FB00599E7C /* ContentView.swift */; };
 		7B1582232C6F35FD00599E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1582222C6F35FD00599E7C /* Assets.xcassets */; };
 		7B1582262C6F35FD00599E7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1582252C6F35FD00599E7C /* Preview Assets.xcassets */; };
 		7B1582382C6F373100599E7C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7B1582372C6F373100599E7C /* .gitignore */; };
+		7B15823B2C6F376200599E7C /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B15823A2C6F376200599E7C /* Secret.swift */; };
+		7B1582422C6F3AFC00599E7C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1582412C6F3AFC00599E7C /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B15821B2C6F35FB00599E7C /* URLVideoPlayerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLVideoPlayerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B15821E2C6F35FB00599E7C /* URLVideoPlayerTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLVideoPlayerTestApp.swift; sourceTree = "<group>"; };
-		7B1582202C6F35FB00599E7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B1582222C6F35FD00599E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B1582252C6F35FD00599E7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B1582372C6F373100599E7C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7B15823A2C6F376200599E7C /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		7B1582412C6F3AFC00599E7C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,9 @@
 		7B15821D2C6F35FB00599E7C /* URLVideoPlayerTest */ = {
 			isa = PBXGroup;
 			children = (
+				7B15823C2C6F37AA00599E7C /* Player */,
+				7B1582392C6F375500599E7C /* Secret */,
 				7B15821E2C6F35FB00599E7C /* URLVideoPlayerTestApp.swift */,
-				7B1582202C6F35FB00599E7C /* ContentView.swift */,
 				7B1582222C6F35FD00599E7C /* Assets.xcassets */,
 				7B1582242C6F35FD00599E7C /* Preview Content */,
 			);
@@ -68,6 +71,22 @@
 				7B1582252C6F35FD00599E7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B1582392C6F375500599E7C /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				7B15823A2C6F376200599E7C /* Secret.swift */,
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+		7B15823C2C6F37AA00599E7C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				7B1582412C6F3AFC00599E7C /* PlayerView.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B1582212C6F35FB00599E7C /* ContentView.swift in Sources */,
+				7B15823B2C6F376200599E7C /* Secret.swift in Sources */,
 				7B15821F2C6F35FB00599E7C /* URLVideoPlayerTestApp.swift in Sources */,
+				7B1582422C6F3AFC00599E7C /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +304,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,9 +312,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = LittleTail.URLVideoPlayerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,6 +338,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +346,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = LittleTail.URLVideoPlayerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

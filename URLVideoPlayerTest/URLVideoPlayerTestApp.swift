@@ -11,7 +11,14 @@ import SwiftUI
 struct URLVideoPlayerTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlayerView()
         }
     }
 }
+
+
+#if DEBUG
+#Preview {
+    PlayerView()
+}
+#endif
